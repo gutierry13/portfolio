@@ -25,7 +25,7 @@ export default function RootLayout({
         <link rel="icon" href="./favicon.ico" />
       </head>
       <body
-        className={`${roboto.variable}} font-roboto bg-gray-900 text-zinc-300  flex`}
+        className={`${roboto.variable}} font-roboto bg-gray-900 text-zinc-300 flex flex-col min-h-screen max-w-7xl mx-auto`}
       >
         <Navigation />
         {children}

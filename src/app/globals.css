@@ -27,6 +27,12 @@ body{
   
 }
 @layer components {
+  .title{
+    @apply text-gray-100 text-3xl font-bold;	
+  }
+  .typeNav{
+    @apply bg-zinc-800 p-1 rounded-md hover:bg-amber-600 transition-all duration-300 cursor-pointer 
+  }
   .skill{
     @apply bg-gray-600 p-1 rounded-md hover:bg-gray-400 transition-all duration-300;
   }

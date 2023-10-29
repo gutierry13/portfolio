@@ -1,7 +1,16 @@
+import Link from 'next/link'
+
 export default function Navigation() {
   return (
-    <div>
-      <h1>Navigation</h1>
+    <div className="flex ">
+      <ul>
+        <li>
+          <Link href="./">Home</Link>
+        </li>
+        <li>
+          <Link href="./portifolio">Portifolio</Link>
+        </li>
+      </ul>
     </div>
   )
 }
