@@ -5,7 +5,7 @@ export default function Navigation() {
     <div className="flex ">
       <ul>
         <li>
-          <Link href="./">Home</Link>
+          <Link href="/">Home</Link>
         </li>
         <li>
           <Link href="./portifolio">Portifolio</Link>

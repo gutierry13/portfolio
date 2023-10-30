@@ -1,17 +1,9 @@
 import Link from 'next/link'
-import websiteImg from '../../assets/40-29-23-174000.png'
 import Image from 'next/image'
-const projects = [
-  {
-    id: 1,
-    title: 'Website',
-    description: 'Descrição do projeto',
-    image: websiteImg,
-  },
-]
-const github = fetch('https://api.github.com/users/gutierry13/repos')
-console.log(github)
-export default function Portifolio() {
+import { myProjects } from '@/lib/info'
+
+export default async function Portifolio() {
+  const projects = myProjects
   return (
     <section>
       <h1 className="title text-center">Recent Works</h1>
@@ -23,9 +15,14 @@ export default function Portifolio() {
       </nav>
       <div className="flex flex-wrap justify-space-around items-center">
         {projects.map((project) => (
-          <Link key={project.id} href={project.title}>
-            <Image src={project.image} alt={project.title} width={400} />
-            <p className="text-center">{project.title}</p>
+          <Link key={`${project.id}`} href={`portifolio/project/${project.id}`}>
+            <Image
+              src={`/${project.image}`}
+              alt={project.name}
+              width={400}
+              height={200}
+            />
+            <p className="text-center">{project.name}</p>
           </Link>
         ))}
       </div>
