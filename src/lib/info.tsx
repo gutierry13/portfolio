@@ -27,4 +27,12 @@ export const myProjects = [
     stack: ['Full Stack'],
     image: '40-29-23-174000.png',
   },
+  {
+    id: 3,
+    name: 'Movie Theather',
+    description: 'A modern movie theather using ReactJS and NodeJS',
+    tech: ['ReactJS', 'NodeJS', 'Stytled Components', 'MySQL'],
+    stack: ['Full Stack'],
+    image: '40-29-23-174000.png',
+  },
 ]

@@ -8,7 +8,7 @@ export default function Navigation() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="./portifolio">Portifolio</Link>
+          <Link href="/portifolio">Portifolio</Link>
         </li>
       </ul>
     </div>
